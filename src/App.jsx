@@ -1,4 +1,4 @@
-import Header from "./Sections/Header.jsx";
+import Header from "./Sections/Header.jsx";//chnaged name
 import Hero from "./sections/Hero.jsx";
 import Features from "./sections/Features.jsx";
 import Pricing from "./sections/Pricing.jsx";
