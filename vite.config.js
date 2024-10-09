@@ -5,6 +5,6 @@ export default defineConfig({
   base: '/',
   plugins: [react()],
   build: {
-    outDir: 'dist', // Ensure Vite outputs to the correct directory
+    outDir: 'dist',
   }
 });
