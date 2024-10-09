@@ -1,11 +1,11 @@
-import Hero from "./sections/Hero.jsx";
-import Features from "./sections/Features.jsx";
-import Pricing from "./sections/Pricing.jsx";
-import Faq from "./sections/Faq.jsx";
-import Testimonials from "./sections/Testimonials.jsx";
-import Download from "./sections/Download.jsx";
-import Footer from "./sections/Footer.jsx";
 import HeaderSection from "./Sections/Headers.jsx";
+import Hero from "./Sections/Hero.jsx";
+import Features from "./Sections/Features.jsx";
+import Pricing from "./Sections/Pricing.jsx";
+import Faq from "./Sections/Faq.jsx";
+import Testimonials from "./Sections/Testimonials.jsx";
+import Download from "./Sections/Download.jsx";
+import Footer from "./Sections/Footer.jsx";
 
 const App = () => {
 	return (
