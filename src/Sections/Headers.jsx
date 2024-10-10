@@ -43,10 +43,10 @@ const HeaderSection = () => {
 				<a className="lg:hidden flex-1 cursor-pointer z-2">
 					<img
 						src="/images/devlaunch.svg"
-						width={36}
-						height={36}
+						width={350}
+						height={100}
 						alt="logo"
-						className="mx-auto"
+						className="mx-auto mt-12"
 					/>
 				</a>
 
@@ -62,7 +62,7 @@ const HeaderSection = () => {
 								<li className="nav-li">
 									<NavLink title="features" />
 									<div className="dot" />
-									<NavLink title="pricing" />
+									<NavLink title="pricing" className="ml-8" /> {/* Added margin-left */}
 								</li>
 
 								<li className="nav-logo">
@@ -77,16 +77,16 @@ const HeaderSection = () => {
 									>
 										<img
 											src="/images/devlaunch.svg"
-											width={250}
-											height={77}
+											width={350}
+											height={100}
 											alt="logo"
-											className="mx-auto my-8"
+											className="mx-auto mt-8"
 										/>
 									</LinkScroll>
 								</li>
 
 								<li className="nav-li">
-									<NavLink title="faq" />
+									<NavLink title="faq" className="mr-" /> {/* Added margin-right */}
 									<div className="dot" />
 									<NavLink title="Team" />
 								</li>
@@ -114,7 +114,7 @@ const HeaderSection = () => {
 				</div>
 
 				<button
-					className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center"
+					className="lg:hidden z-2 size-10 border-2 border-p4/25 rounded-full flex justify-center items-center"
 					onClick={() => setIsOpen((prevState) => !prevState)}
 				>
 					<img

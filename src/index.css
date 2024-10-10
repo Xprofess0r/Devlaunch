@@ -62,7 +62,7 @@
   }
 
   .body-1 {
-    @apply text-[22px] leading-[36px];
+    @apply text-[19px] leading-[36px];
   }
 
   .body-2 {
@@ -176,7 +176,20 @@
   .sidebar-before {
     @apply max-lg:before:absolute max-lg:before:-right-64 max-lg:before:top-2/5 max-lg:before:h-[440px] max-lg:before:w-[252px] max-lg:before:bg-s4 max-lg:before:blur-[200px] max-lg:before:content-[''];
   }
+/* Move Pricing (child 1) */
+.nav-li:nth-child(1) {
+  @apply mr-10; /* Move Pricing a bit left */
+}
 
+/* Move FAQ (targeting the last list item more specifically) */
+.nav-li:nth-child(3):last-child {
+  @apply ml-12; /* Move FAQ a bit right */
+}
+
+/* If FAQ is inside a nested element like .dot */
+.dot + .nav-li {
+  @apply ml-8; /* Alternatively, move FAQ here */
+}
   /* END of Header */
   /* START of Hero */
   .hero-img_res {
@@ -196,6 +209,20 @@
   .glow-after {
     @apply after:g8 after:absolute after:bottom-0 after:left-4 after:z-4 after:h-0.5 after:w-7/20 after:opacity-0 after:transition-all after:duration-500 after:content-[''] group-hover:after:left-3/5 group-hover:after:opacity-40;
   }
+  .h2 {
+   
+    display: inline-block; /* Ensure it behaves like text, not a block element */
+  
+  }
+  .cursor-style {
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+    vertical-align: middle; /* Keeps the cursor aligned with the text */
+  }
+  
+  
+  
 
   /*END of Custom Button*/
   /* START of Feature */
@@ -317,6 +344,13 @@
 .download_tech-link:hover .team-member_social-icon svg path {
   @apply fill-p1;
 }
+
+.filter-white {
+  filter: invert(1); /* Inverts the colors to make icons white */
+}
+
+
+
 
 /* End of Team Page */
 

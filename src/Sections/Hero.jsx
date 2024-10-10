@@ -1,3 +1,4 @@
+import ReactTypingEffect from "react-typing-effect";
 import { Element, Link as LinkScroll } from "react-scroll";
 import Button from "../components/Button.jsx";
 
@@ -7,16 +8,25 @@ const Hero = () => {
       <Element name="hero">
         <div className="container">
           <div className="relative z-2 max-w-512 max-lg:max-w-388">
-            <div className="caption small-2 uppercase text-p3">
-              Web & App Development
-            </div>
-            <h1 className="mb-6 h1 text-p4 uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-5xl max-md:leading-12">
-            INNOVATIVE SOLUTIONS
-
-            </h1>
-            <p className="max-w-440 mb-14 body-1 max-md:mb-10">
-            At DevLaunch, we turn innovative ideas into reality through efficient development processes,
-             empowering your business to launch and succeed
+            {/* ReactTypingEffect for dynamic typing */}
+            <h2 className="mb-6 h2 text-p4 uppercase " style={{ display: "inline-block" }}>
+              <span><ReactTypingEffect
+                text={[
+                  "INNOVATIVE SOLUTIONS",
+                  "EFFORTLESS DEVELOPMENT",
+                  "CREATIVE PROJECTS",
+                  "CUTTING-EDGE TECHNOLOGY"
+                ]}
+                speed={120}  // Typing speed in milliseconds
+                eraseSpeed={50}  // Erasing speed in milliseconds
+                typingDelay={500}  // Delay before typing starts
+                eraseDelay={3000} 
+                cursorClassName="cursor-style" 
+              />
+              </span>
+            </h2>
+            <p className="max-w-440 mb-14 body-1 max-md:mb-10 text-xs">
+              At DevLaunch, we turn innovative ideas into reality through efficient development processes.
             </p>
             <LinkScroll to="features" offset={-100} spy smooth>
               <Button icon="/images/zap.svg">START BUILDING</Button>
@@ -26,7 +36,7 @@ const Hero = () => {
           <div className="absolute -top-32 left-[calc(50%-340px)] w-[1230px] pointer-events-none hero-img_res">
             <img
               src="/images/hero.svg"
-              className="size-[300px]  h-auto lg:w-[1000px]"
+              className="size-[300px] h-auto lg:w-[1000px]"
               alt="hero"
             />
           </div>
@@ -35,4 +45,5 @@ const Hero = () => {
     </section>
   );
 };
+
 export default Hero;

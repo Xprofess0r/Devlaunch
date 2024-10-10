@@ -7,7 +7,7 @@ export default {
         // Primary Colors (Purples)
         p1: '#b4b2b8', // Light purple
         p2: '#8b47e5', // Main purple
-        p3: '#b107fa', // Slightly darker purple
+        p3: '#E6D9A2', // Slightly darker purple
         p4: '#ffffff', // Lighter purple tone for text
         p5: '#9B7DD4', // Lighter purple for subtle accents
 

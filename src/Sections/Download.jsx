@@ -1,9 +1,11 @@
 import React from "react";
+import { Element } from "react-scroll";
 import { teamMembers } from "../constants/index.jsx"; // Import the team members data
 
 const MeetOurTeam = () => {
   return (
-    <section className="team-section py-16">
+    <section  className="team-section py-16">
+      <Element name="Team">
       <div className="container mx-auto ">
         <h2 className="text-4xl font-bold text-center mb-10 text-white">
           Meet Our Team
@@ -191,6 +193,7 @@ const MeetOurTeam = () => {
           </div>
         </div>
       </div>
+      </Element>
     </section>
   );
 };

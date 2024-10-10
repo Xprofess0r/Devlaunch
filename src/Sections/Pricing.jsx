@@ -81,7 +81,7 @@ const Pricing = () => {
                         index === 1 ? "text-p3" : "text-p4",
                       )}
                     >
-                      ${" "}
+                   
                       <CountUp
                         start={plan.priceMonthly}
                         end={plan.priceMonthly} // Use the monthly price by default
@@ -89,10 +89,9 @@ const Pricing = () => {
                         useEasing={false}
                         preserveValue
                       />
+                      {" "}K
                     </div>
-                    <div className="small-1 relative top-3 ml-1 uppercase">
-                      / mo
-                    </div>
+                    
                   </div>
                 </div>
 

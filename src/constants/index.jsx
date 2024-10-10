@@ -1,10 +1,20 @@
+
+ export const greeting = {
+  title: "DevLaunch",
+  subTitle:[
+   "INNOVATIVE SOLUTIONS",
+   "EFFORTLESS DEVELOPMENT",   
+   "CREATIVE PROJECTS",
+  "CUTTING-EDGE TECHNOLOGY",
+  ],
+};
 export const features = [
   {
     id: "0",
     icon: "/images/feature-1.png",
     caption: "Easy integration",
     title: "Code Smarter, Not Harder",
-    text: "DevLaunch streamlines development with advanced tools and automation, letting you focus on innovation while we boost your team's efficiency.",
+    text: "DevLaunch streamlines development with advanced tools and automation, letting you focus on innovation while we boost your team's efficiency and productivity, ensuring success.",
     button: {
       icon: "/images/magictouch.svg",
       title: "SEE OUR TOOLS",
@@ -27,22 +37,22 @@ export const details = [
   {
     id: "0",
     icon: "/images/detail-1.png",
-    title: "AI-Driven Automation",
+    title: "Custom App & Web Development",
   },
   {
     id: "1",
     icon: "/images/detail-2.png",
-    title: "Seamless Collaboration",
+    title: "3-Months Post-Launch Support",
   },
   {
     id: "2",
     icon: "/images/detail-3.png",
-    title: "High-Speed Cloud Solutions",
+    title: "Real-Time Collaboration",
   },
   {
     id: "3",
     icon: "/images/detail-4.png",
-    title: "24 / 7 Customer support",
+    title: "24/7 Assistance & Monitoring",
   },
 ];
 
@@ -113,13 +123,13 @@ export const plans = [
   {
     id: "0",
     title: "App",
-    priceMonthly: 19,
+    priceMonthly: 35,
     priceYearly: 12,
     caption: "Best for solo creators",
     features: [
-      "100MB Cloud storage",
-      "100+ prompt templates",
-      "5 projects",
+      "Custom app design & dev",
+      "3 months support",
+      "Bug fixes & updates",
       "24/7 support",
     ],
     icon: "/images/circle.svg",
@@ -128,14 +138,14 @@ export const plans = [
   {
     id: "1",
     title: "App & Website",
-    priceMonthly: 79,
+    priceMonthly: 50,
     priceYearly: 59,
     caption: "Most popular plan",
     features: [
-      "All Starter features",
-      "1TB additional storage",
-      "Unlimited projects",
-      "Analytics",
+      "App & website dev",
+      "3 months monitoring",
+      "Unlimited revisions",
+      "Analytics integration",
     ],
     icon: "/images/triangle.svg",
     logo: "/images/plan-2.png",
@@ -143,19 +153,22 @@ export const plans = [
   {
     id: "2",
     title: "Website",
-    priceMonthly: 39,
+    priceMonthly: 25,
     priceYearly: 29,
     caption: "Exclusively for teams",
     features: [
-      "All Overdrive features",
-      "10TB additional storage",
-      "50% off per member",
+      "Custom website dev",
+      "3 months monitoring",
+      "SEO optimization",
       "Real-time collaboration",
     ],
     icon: "/images/hexagon.svg",
     logo: "/images/plan-3.png",
   },
 ];
+
+
+
 
 export const testimonials = [
   {
@@ -172,7 +185,7 @@ export const testimonials = [
     role: "Vid capital intl",
     avatarUrl: "/images/testimonials/mark-erixon.png",
     comment:
-      "At first, I wasn’t sure about switching, but now I can’t imagine handling our app development without DevLaunch. It’s transformative.",
+      "At first, I wasn’t sure about switching, but now I can’t imagine handling our app development without DevLaunch.",
   },
   {
     id: "2",
@@ -190,22 +203,7 @@ export const testimonials = [
     comment:
       "Integrating DevLaunch was seamless. It’s made our daily tasks more efficient, and project management is now a breeze.",
   },
-  {
-    id: "4",
-    name: "Becky Snider",
-    role: "Floclips",
-    avatarUrl: "/images/testimonials/becky-snider.png",
-    comment:
-      "The performance boost is clear. DevLaunch has completely transformed how we approach development and project scalability."
-  },
-  {
-    id: "5",
-    name: "Jim Bradley",
-    role: "Vid capital intl",
-    avatarUrl: "/images/testimonials/jim-bradley.png",
-    comment:
-      "The insights provided by DevLaunch are like having a roadmap for our entire development process. It’s been crucial for guiding our technical decisions.",
-  },
+
 ];
 
 export const logos = [
@@ -444,14 +442,15 @@ export const teamMembers = [
   },
   {
     id: 5,
-    name: "Aditya Raj",
-    photo: "/images/team/aditya.jpg",
+    name: "Anirudh Mahato",
+    photo: "/images/team/anirudh.jpeg",
     socials:{
-    instagram: "https://www.instagram.com/sudo_aditya_/",
-    linkedin: "https://www.linkedin.com/in/aditya-raj-shit-b30129258/",
-    github: "https://github.com/AdityaRaj212",
+    instagram: "https://www.instagram.com/ani_rudh.1403/",
+    linkedin: "https://www.linkedin.com/in/anirudh-mahato-683640247/",
+    github: "https://github.com/AnirudhMahato",
     },
   },
+
   {
     id: 6,
     name: "Bipin Kumar",
@@ -464,54 +463,50 @@ export const teamMembers = [
   },
   {
     id: 7,
-    name: "Alicia Barker",
-    photo: "/images/testimonials/alicia-barker.png",
+    name: "Anushika Srivastava",
+    photo: "/images/team/anushika.jpeg",
     socials:{
-    instagram: "https://instagram.com/shashi_visuals",
-    linkedin: "https://linkedin.com/in/shashi-bhushan22gg10043",
-    github: "https://github.com/Xprofess0r",
+    instagram: "https://instagram.com/_anushiikaa",
+    linkedin: "https://www.linkedin.com/in/anushika-srivastava-407b1b277",
+    github: "",
     },
   },
   {
     id: 8,
-    name: "Jim Bradley",
-    photo: "/images/testimonials/jim-bradley.png",
+    name: "Vedansh Gupta",
+    photo: "/images/team/vedansh.jpeg",
     socials:{
-    instagram: "https://instagram.com/shashi_visuals",
-    linkedin: "https://linkedin.com/in/shashi-bhushan22gg10043",
-    github: "https://github.com/Xprofess0r",
+    instagram: "https://www.instagram.com/.vedansh._/",
+    linkedin: "https://www.linkedin.com/in/vedansh-gupta-a9b4a4212/",
+    github: "",
     },
   },
   {
     id: 9,
-    name: "Becky Snider",
-    photo: "/images/testimonials/becky-snider.png",
+    name: "Aditya Raj",
+    photo: "/images/team/aditya.jpg",
     socials:{
-    instagram: "https://instagram.com/shashi_visuals",
-    linkedin: "https://linkedin.com/in/shashi-bhushan22gg10043",
-    github: "https://github.com/Xprofess0r",
+    instagram: "https://www.instagram.com/sudo_aditya_/",
+    linkedin: "https://www.linkedin.com/in/aditya-raj-shit-b30129258/",
+    github: "https://github.com/AdityaRaj212",
     },
   },
+ 
 ];
 export const socials = [
   {
     id: "0",
-    title: "x",
-    icon: "/images/socials/x.svg",
-    url: "#",
+    title: "instagram",
+    icon: "/images/socials/instagram.svg",
+    url: "https://www.instagram.com/devlaunch.co.in?igsh=YTQwZjQ0NmI0OA==",
   },
   {
     id: "1",
-    title: "Threads",
-    icon: "/images/socials/threads.svg",
-    url: "#",
+    title: "linkedin",
+    icon: "/images/socials/linkedin-in.svg",
+    url: "https://www.linkedin.com/company/dvlaunch/",
   },
  
-  {
-    id: "3",
-    title: "Discord",
-    icon: "/images/socials/discord.svg",
-    url: "#",
-  },
+
 
 ];
