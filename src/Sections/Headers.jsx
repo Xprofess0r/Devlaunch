@@ -43,8 +43,8 @@ const HeaderSection = () => {
 				<a className="lg:hidden flex-1 cursor-pointer z-2">
 					<img
 						src="/images/devlaunch.svg"
-						width={350}
-						height={100}
+						width={400}
+						height={150}
 						alt="logo"
 						className="mx-auto mt-12"
 					/>
@@ -112,7 +112,7 @@ const HeaderSection = () => {
 						</div>
 					</div>
 				</div>
-
+               
 				<button
 					className="lg:hidden z-2 size-10 border-2 border-p4/25 rounded-full flex justify-center items-center"
 					onClick={() => setIsOpen((prevState) => !prevState)}
@@ -123,6 +123,7 @@ const HeaderSection = () => {
 						className="size-1/2 object-contain"
 					/>
 				</button>
+			
 			</div>
 		</header>
 	);
