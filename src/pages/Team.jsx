@@ -10,8 +10,8 @@ const MeetOurTeam = () => {
       <div className="container mx-auto mb-8">
         <Link to="/">
           <div
-            className="bg-transparent text-blue-500 flex items-center px-6 py-3 text-xl rounded-full shadow-md transition duration-300 hover:text-blue-400 back-animation"
-            style={{ position: "absolute", left: "11rem", top: "20px" }}
+            className=" text-white flex items-center px-2 py-3 text-xl  transition duration-300 hover:text-p2 back-animation"
+            style={{zIndex: 10 }}
           >
             <img
               src="/images/back.svg"

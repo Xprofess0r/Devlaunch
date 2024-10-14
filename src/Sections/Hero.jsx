@@ -32,9 +32,15 @@ const Hero = () => {
             <p className="max-w-440 mb-14 body-1 max-md:mb-10 text-xs">
               At DevLaunch, we turn innovative ideas into reality through efficient development processes.
             </p>
-            <LinkScroll to="features" offset={-100} spy smooth>
+            
+            <a
+              href="https://calendly.com/ankitkumarsoni656-iitkgp/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button icon="/images/zap.svg">Schedule a meet!</Button>
-            </LinkScroll>
+            </a>
+         
           </div>
 
           <div className="absolute -top-32 left-[calc(50%-340px)] w-[1230px] pointer-events-none hero-img_res hidden lg:block">
