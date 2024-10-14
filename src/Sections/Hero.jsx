@@ -37,7 +37,7 @@ const Hero = () => {
             </LinkScroll>
           </div>
 
-          <div className="absolute -top-32 left-[calc(50%-340px)] w-[1230px] pointer-events-none hero-img_res">
+          <div className="absolute -top-32 left-[calc(50%-340px)] w-[1230px] pointer-events-none hero-img_res hidden lg:block">
             <Globe></Globe>
           </div>
       
