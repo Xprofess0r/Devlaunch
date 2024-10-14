@@ -1,4 +1,5 @@
 import { Link as LinkScroll } from "react-scroll";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 
@@ -88,7 +89,13 @@ const HeaderSection = () => {
 								<li className="nav-li">
 									<NavLink title="faq" className="mr-" /> {/* Added margin-right */}
 									<div className="dot" />
-									<NavLink title="Team" />
+									<Link
+                                     to="/team" // Use Link from react-router-dom for "Team"
+                                    className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
+                                     >
+                                    Team
+                                   </Link>
+									
 								</li>
 							</ul>
 						</nav>

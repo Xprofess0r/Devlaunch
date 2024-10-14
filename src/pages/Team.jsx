@@ -1,12 +1,30 @@
 import React from "react";
-import { Element } from "react-scroll";
+import { Link } from "react-router-dom";
 import { teamMembers } from "../constants/index.jsx"; // Import the team members data
 
 const MeetOurTeam = () => {
   return (
-    <section  className="team-section py-16">
-      <Element name="Team">
-      <div className="container mx-auto ">
+    <div className="team-section py-16">
+
+      {/* Back button to navigate back to the homepage */}
+      <div className="container mx-auto mb-8">
+        <Link to="/">
+          <div
+            className="bg-transparent text-blue-500 flex items-center px-6 py-3 text-xl rounded-full shadow-md transition duration-300 hover:text-blue-400 back-animation"
+            style={{ position: "absolute", left: "11rem", top: "20px" }}
+          >
+            <img
+              src="/images/back.svg"
+              alt="Back"
+              className="mr-2 filter-white"
+              style={{ width: "20px", height: "20px" }}
+            />
+            Back
+          </div>
+        </Link>
+      </div>
+
+      <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center mb-10 text-white">
           Meet Our Team
         </h2>
@@ -18,7 +36,7 @@ const MeetOurTeam = () => {
               <div
                 key={member.id}
                 className="team-member rounded-lg shadow-lg p-6 text-center transform transition duration-300 hover:scale-105"
-                style={{ backgroundColor: '#350d4a' }}
+                style={{ backgroundColor: "#350d4a" }}
               >
                 <img
                   src={member.photo}
@@ -72,8 +90,10 @@ const MeetOurTeam = () => {
             ))}
           </div>
 
-          {/* Second Row - 4 Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+          {/* Additional team members grid */}
+          {/* Add the rest of the team members here */}
+              {/* Second Row - 4 Cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
             {teamMembers.slice(2, 6).map((member) => (
               <div
                 key={member.id}
@@ -193,8 +213,19 @@ const MeetOurTeam = () => {
           </div>
         </div>
       </div>
-      </Element>
-    </section>
+
+      {/* CSS Animation for shaking the back button */}
+      <style >{`
+        @keyframes swing {
+         from { transform: translateX(0rem); }
+         to { transform: translateX(0.5rem); }
+         }
+
+        .back-animation {
+          animation: swing 1s infinite alternate ease-in-out;
+        }
+      `}</style>
+    </div>
   );
 };
 
