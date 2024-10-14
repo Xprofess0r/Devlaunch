@@ -212,7 +212,9 @@
   .h2 {
    
     display: inline-block; /* Ensure it behaves like text, not a block element */
-  
+    display: flex;
+    align-items: center;
+    min-height: 100px;
   }
   .cursor-style {
     display: inline-block;

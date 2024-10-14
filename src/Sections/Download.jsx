@@ -1,201 +1,85 @@
-import React from "react";
 import { Element } from "react-scroll";
-import { teamMembers } from "../constants/index.jsx"; // Import the team members data
+import { links, logos } from "../constants/index.jsx";
+import { Marker } from "../components/Marker.jsx";
 
-const MeetOurTeam = () => {
+const Download = () => {
   return (
-    <section  className="team-section py-16">
-      <Element name="Team">
-      <div className="container mx-auto ">
-        <h2 className="text-4xl font-bold text-center mb-10 text-white">
-          Meet Our Team
-        </h2>
-
-        <div className="grid gap-8">
-          {/* First Row - 2 Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {teamMembers.slice(0, 2).map((member) => (
-              <div
-                key={member.id}
-                className="team-member rounded-lg shadow-lg p-6 text-center transform transition duration-300 hover:scale-105"
-                style={{ backgroundColor: '#350d4a' }}
-              >
+    <section>
+      <Element
+        name="download"
+        className="g7 relative pb-32 pt-24 max-lg:pb-24 max-md:py-16"
+      >
+        <div className="container">
+          <div className="flex items-center">
+            <div className="relative mr-6 flex-540 max-xl:flex-280 max-lg:flex256 max-md:flex-100">
+              <div className="mb-10">
                 <img
-                  src={member.photo}
-                  alt={member.name}
-                  className="w-32 h-32 mx-auto rounded-full object-cover mb-4 border-4 border-white"
+                  src="/images/devlaunch.svg"
+                  width={350}
+                  height={100}
+                  alt="devlaunch"
+                   className="-ml-7 -mb-40"
                 />
-                <h3 className="text-2xl font-semibold mb-4 text-white">
-                  {member.name}
-                </h3>
+              </div>
 
-                {/* Social Icons */}
-                <div className="flex justify-center space-x-4">
-                  <a
-                    href={member.socials.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-transform duration-500 hover:scale-125"
+              <p className="body-1 mb-10 max-w-md">
+              Revolutionizing experiences with tailored solutions for every platform imaginable.
+              </p>
+
+              <ul className="flex flex-wrap items-center gap-6">
+                {links.map(({ id, url, icon }) => (
+                  <li
+                    key={id}
+                    className="download_tech-link download_tech-link_last-before download_tech-link_last-after"
                   >
-                    <img
-                      src="/images/socials/instagram.svg"
-                      alt="Instagram"
-                      className="w-8 h-8 object-contain"
-                    />
-                  </a>
-                  <a
-                    href={member.socials.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-transform duration-500 hover:scale-125"
-                  >
-                    <img
-                      src="/images/socials/github.svg"
-                      alt="GitHub"
-                      className="w-8 h-8 object-contain"
-                    />
-                  </a>
-                  <a
-                    href={member.socials.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-transform duration-500 hover:scale-125"
-                  >
-                    <img
-                      src="/images/socials/linkedin.svg"
-                      alt="LinkedIn"
-                      className="w-8 h-8 object-contain"
-                    />
-                  </a>
+                    <a
+                      href={url}
+                      className="size-22 download_tech-icon_before relative flex items-center justify-center rounded-half border-2 border-s3 bg-s1 transition-borderColor duration-500"
+                    >
+                      <span className="absolute -top-2 rotate-90">
+                        <Marker />
+                      </span>
+                      <img
+                        src={"/images/lines.svg"}
+                        alt="lines"
+                        className="absolute size-13/20 object-contain"
+                      />
+                      <span className="download_tech-icon">{icon}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="mb-10 max-md:hidden">
+              <div className="download_preview-before download_preview-after rounded-40 relative w-[955px] border-2 border-s5 p-6">
+                <div className="relative rounded-3xl bg-s1 px-6 pb-6 pt-14">
+                  <span className="download_preview-dot left-6 bg-p2" />
+                  <span className="download_preview-dot left-11 bg-s3" />
+                  <span className="download_preview-dot left-16 bg-p1/15" />
+
+                  <img
+                    src="/images/image.jpg"
+                    width={855}
+                    height={655}
+                    alt="screen"
+                    className="rounded-xl"
+                  />
                 </div>
               </div>
-            ))}
+            </div>
           </div>
 
-          {/* Second Row - 4 Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
-            {teamMembers.slice(2, 6).map((member) => (
-              <div
-                key={member.id}
-                className="team-member bg-p3 rounded-lg shadow-lg p-6 text-center transform transition duration-300 hover:scale-105"
-                style={{ backgroundColor: '#350d4a' }}
-              >
-                <img
-                  src={member.photo}
-                  alt={member.name}
-                  className="w-32 h-32 mx-auto rounded-full object-cover mb-4 border-4 border-white"
-                />
-                <h3 className="text-2xl font-semibold mb-4 text-white">
-                  {member.name}
-                </h3>
-
-                {/* Social Icons */}
-                <div className="flex justify-center space-x-4">
-                  <a
-                    href={member.socials.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-transform duration-500 hover:scale-125"
-                  >
-                    <img
-                      src="/images/socials/instagram.svg"
-                      alt="Instagram"
-                      className="w-8 h-8 object-contain"
-                    />
-                  </a>
-                  <a
-                    href={member.socials.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-transform duration-500 hover:scale-125"
-                  >
-                    <img
-                      src="/images/socials/github.svg"
-                      alt="GitHub"
-                      className="w-8 h-8 object-contain"
-                    />
-                  </a>
-                  <a
-                    href={member.socials.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-transform duration-500 hover:scale-125"
-                  >
-                    <img
-                      src="/images/socials/linkedin.svg"
-                      alt="LinkedIn"
-                      className="w-8 h-8 object-contain"
-                    />
-                  </a>
-                </div>
-              </div>
+          {/* <ul className="mt-24 flex justify-center max-lg:hidden">
+            {logos.map(({ id, url, width, height, title }) => (
+              <li key={id} className="mx-10">
+                <img src={url} width={width} height={height} alt={title} />
+              </li>
             ))}
-          </div>
-
-          {/* Third Row - 3 Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-            {teamMembers.slice(6, 9).map((member) => (
-              <div
-                key={member.id}
-                className="team-member bg-p3 rounded-lg shadow-lg p-6 text-center transform transition duration-300 hover:scale-105"
-                style={{ backgroundColor: '#350d4a' }}
-              >
-                <img
-                  src={member.photo}
-                  alt={member.name}
-                  className="w-32 h-32 mx-auto rounded-full object-cover mb-4 border-4 border-white"
-                />
-                <h3 className="text-2xl font-semibold mb-4 text-white">
-                  {member.name}
-                </h3>
-
-                {/* Social Icons */}
-                <div className="flex justify-center space-x-4">
-                  <a
-                    href={member.socials.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-transform duration-500 hover:scale-125"
-                  >
-                    <img
-                      src="/images/socials/instagram.svg"
-                      alt="Instagram"
-                      className="w-8 h-8 object-contain"
-                    />
-                  </a>
-                  <a
-                    href={member.socials.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-transform duration-500 hover:scale-125"
-                  >
-                    <img
-                      src="/images/socials/github.svg"
-                      alt="GitHub"
-                      className="w-8 h-8 object-contain"
-                    />
-                  </a>
-                  <a
-                    href={member.socials.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-transform duration-500 hover:scale-125"
-                  >
-                    <img
-                      src="/images/socials/linkedin.svg"
-                      alt="LinkedIn"
-                      className="w-8 h-8 object-contain"
-                    />
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
+          </ul> */}
         </div>
-      </div>
       </Element>
     </section>
   );
 };
-
-export default MeetOurTeam;
+export default Download;
