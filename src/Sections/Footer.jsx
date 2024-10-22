@@ -18,18 +18,7 @@ const Footer = () => {
                 <a href="mailto:akshat2k24@gmail.com" className="transition-all duration-500 text-p5 hover:text-p1">akshat2k24@gmail.com</a>
               </p>
             </div>
-            <div className="text-center">
-              <img
-                src="/images/ankitdp.jpeg"
-                alt="Ankit Kumar Soni"
-                className="object-cover w-24 h-24 mx-auto mb-2 rounded-full"
-              />
-              <p>Ankit Kumar Soni</p>
-              <p>
-                <a href="tel:9438046114" className="transition-all duration-500 text-p5 hover:text-p1">9438046114</a><br />
-                <a href="mailto:ankitkumarsoni656.iitkgp@gmail.com" className="transition-all duration-500 text-p5 hover:text-p1">ankitkumarsoni656.iitkgp@gmail.com</a>
-              </p>
-            </div>
+          
           </div>
 
           {/* Social Media Links */}
