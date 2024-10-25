@@ -6,18 +6,7 @@ const Footer = () => {
       <div className="container py-10">
         <div className="flex flex-col items-center justify-between w-full">
           <div className="flex flex-col gap-10 mt-5 sm:flex-row sm:justify-center">
-            <div className="text-center">
-              <img
-                src="/images/akshatdp.png"
-                alt="Akshat Srivastava"
-                className="object-cover w-24 h-24 mx-auto mb-2 rounded-full"
-              />
-              <p>Akshat Srivastava</p>
-              <p>
-                <a href="tel:8765335280" className="transition-all duration-500 text-p5 hover:text-p1">8765335280</a><br />
-                <a href="mailto:akshat2k24@gmail.com" className="transition-all duration-500 text-p5 hover:text-p1">akshat2k24@gmail.com</a>
-              </p>
-            </div>
+          
           
           </div>
 
