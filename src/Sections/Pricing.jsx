@@ -161,7 +161,7 @@ const Pricing = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button icon="/images/zap.svg">Get Started</Button>
+                    <Button icon="/images/zap.svg" alt ="get started button">Get Started</Button>
                   </a>
                 </div>
 

@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import { Element } from "react-scroll";
-
 import { details, features } from "../constants/index.jsx";
 import Button from "../components/Button.jsx";
 
 const Features = () => {
+  const navigate = useNavigate();
+
   return (
     <section>
       <Element name="features">
@@ -17,7 +19,6 @@ const Features = () => {
                 <div className="w-full flex justify-start items-start">
                   <div className="-ml-3 mb-12 flex items-center justify-center flex-col">
                     <div className="w-0.5 h-16 bg-s3" />
-
                     <img
                       src={icon}
                       className="size-28 object-contain"
@@ -31,17 +32,20 @@ const Features = () => {
                   {title}
                 </h2>
                 <p className="mb-11 body-1 max-md:mb-8 max-md:body-3">{text}</p>
-                <Button icon={button.icon}>{button.title}</Button>
+                <Button
+                  icon={button.icon}
+                  onClick={() => navigate(button.path)}
+                >
+                  {button.title}
+                </Button>
               </div>
             ))}
 
             <ul className="relative flex justify-around flex-grow px-[5%] border-2 border-s3 rounded-7xl max-md:hidden">
               <div className="absolute bg-s3/20 top-[38%] left-0 right-0 w-full h-[1px] z-10" />
-
               {details.map(({ id, icon, title }) => (
                 <li key={id} className="relative pt-16 px-4 pb-14">
                   <div className="absolute top-8 bottom-0 left-1/2 bg-s3/20 w-[1px] h-full z-10" />
-
                   <div className="flex items-center justify-center mx-auto mb-3 border-2 border-s2 rounded-full hover:border-s4 transition-all duration-500 shadow-500 size-20">
                     <img
                       src={icon}
@@ -49,7 +53,6 @@ const Features = () => {
                       className="size-17/20 object-contain z-20"
                     />
                   </div>
-
                   <h3 className="relative z-2 max-w-36 mx-auto my-0 base-small text-center uppercase">
                     {title}
                   </h3>
@@ -62,4 +65,5 @@ const Features = () => {
     </section>
   );
 };
+
 export default Features;

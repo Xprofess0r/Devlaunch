@@ -1,37 +1,93 @@
 
- export const greeting = {
-  title: "DevLaunch",
-  subTitle:[
-   "INNOVATIVE SOLUTIONS",
-   "EFFORTLESS DEVELOPMENT",   
-   "CREATIVE PROJECTS",
-  "CUTTING-EDGE TECHNOLOGY",
+export const greeting = {
+  title: "DevLaunch - Digital Presence Experts",
+  subTitle: [
+    "Custom Website & App Development",
+    "Expert Social Media Management",
+    "Innovative Digital Marketing",
+    "Boost Your Online Presence",
   ],
 };
+
 export const features = [
   {
     id: "0",
     icon: "/images/feature-1.png",
+    iconAlt: "DevLaunch easy integration feature icon",
     caption: "Easy integration",
     title: "Code Smarter, Not Harder",
     text: "DevLaunch streamlines development with advanced tools and automation, letting you focus on innovation while we boost your team's efficiency and productivity, ensuring success.",
     button: {
       icon: "/images/magictouch.svg",
+      iconAlt: "Magic touch icon for DevLaunch tools",
       title: "SEE OUR TOOLS",
+      path: "/tools",
+    
     },
   },
   {
     id: "1",
     icon: "/images/feature-2.png",
+    iconAlt:"DevLaunch secure and trustworthy feature icon",
     caption: "Secure & trustworthy",
     title: "Secure Solutions You Can Trust",
     text: "Your project security is our top priority. With advanced encryption and robust protocols, DevLaunch ensures that your code and data are protected at every stage of development.",
     button: {
       icon: "/images/docs.svg",
+      iconAlt:"Documentation icon for learning more about DevLaunch security",
       title: "LEARN MORE",
+      path: "/security-info",
+     
     },
   },
 ];
+
+export const tools = [
+  {
+    id: "0",
+    title: "SEO Tool",
+    description: "Optimize your website for search engines to increase visibility and drive traffic.",
+    image: "/images/seo-tool.png",
+    url: "https://seo-tool-rosy.vercel.app/",
+  },
+  {
+    id: "1",
+    title: "AI Blog Generator",
+    description: "Generate high-quality blog posts with AI, save time by improving content creation.",
+    image: "/images/ai-blog.png",
+    url: "https://ai-blog-nu.vercel.app/",
+  },
+  {
+    id: "1",
+    title: "Coming Soon..",
+    description: "We're putting the finishing touches on a powerful new tool to make your life easier.",
+    image: "/images/coming-soon.avif",
+    url: "",
+  },
+
+  // Add more tools as needed
+];
+export const securityInfoData = [{
+  frontImage: "/images/coming-soon.avif", // Replace with the actual path to the "Coming Soon" image
+  title: "Coming Soon",
+  description: "Stay tuned for more security updates.",
+  backgroundColor: "#2980b9",
+  textColor: "text-white"
+},
+{
+  frontImage: "/images/coming-soon.avif", // Replace with the actual path to the "Coming Soon" image
+  title: "Coming Soon",
+  description: "Stay tuned for more security updates.",
+  backgroundColor: "#2980b9",
+  textColor: "text-white"
+},
+{
+  frontImage: "/images/coming-soon.avif", // Replace with the actual path to the "Coming Soon" image
+  title: "Coming Soon",
+  description: "Stay tuned for more security updates.",
+  backgroundColor: "#2980b9",
+  textColor: "text-white",
+}];
 
 export const details = [
   {
@@ -134,8 +190,9 @@ export const plans = [
       "3 months support",
       "24/7 support",
     ],
-    icon: "/images/circle.svg",
+    icon: "/images/circle.svg", 
     logo: "/images/plan-1.png",
+    
   },
   {
     id: "1",

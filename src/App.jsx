@@ -7,6 +7,8 @@ import Faq from "./Sections/Faq.jsx";
 import Download from "./Sections/Download.jsx";
 import Footer from "./Sections/Footer.jsx";
 import Team from "./pages/Team.jsx"; // Import the new Team page
+import ToolsPage from "./pages/ToolsPage.jsx";
+import SecurityInfo from "./pages/securityInfo.jsx";
 
 const App = () => {
   return (
@@ -27,6 +29,8 @@ const App = () => {
           }
         />
         <Route path="/team" element={<Team />} /> {/* Team page without navbar */}
+        <Route path="/tools" element={<ToolsPage />} />
+        <Route path="/security-info" element={<SecurityInfo />} />
       </Routes>
     </Router>
   );

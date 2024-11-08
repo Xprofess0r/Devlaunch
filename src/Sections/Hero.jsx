@@ -16,10 +16,10 @@ const Hero = () => {
             <h2 className="mb-6 h2 text-p4 uppercase " style={{ display: "inline-block", minHeight: "200px"}}>
               <span><ReactTypingEffect
                 text={[
-                  "INNOVATIVE SOLUTIONS",
-                  "EFFORTLESS DEVELOPMENT",
-                  "CREATIVE PROJECTS",
-                  "CUTTING-EDGE TECHNOLOGY"
+                "Custom Websites",
+                "App Development",
+                "Social Media Growth",
+                "Digital Marketing Pros",
                 ]}
                 speed={120}  // Typing speed in milliseconds
                 eraseSpeed={50}  // Erasing speed in milliseconds
